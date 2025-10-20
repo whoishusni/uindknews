@@ -42,5 +42,5 @@ class CleaningdataPipeline:
             
         news_content = item.get('news_content')
         news_content = news_content.replace('/n',' ').replace('/r',' ')
-        item['news_content'] = news_content.strip()
+        item['news_content'] = f"{news_content.strip()}...Read More"
         return item
