@@ -1,5 +1,5 @@
 import scrapy
-from uindknews_scrapper.items import UindknewsItem
+from uindknews.items import UindknewsItem
 
 
 class UindknewsspiderSpider(scrapy.Spider):
