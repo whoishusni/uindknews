@@ -4,7 +4,7 @@ This project is designed to scrape news data from the official website of **UIN 
 
 ## Project Overview
 
-- **Purpose:** Scrape Last 4 news articles from the UIN Datokarama Palu website.
+- **Purpose:** Scrape Last 9 news articles from the UIN Datokarama Palu website.
 - **Output:** Provide an API to access the scraped news data.
 - **Note:** This is an unofficial API and is not affiliated with UIN Datokarama Palu.
 
