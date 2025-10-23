@@ -36,3 +36,4 @@ This project is designed to scrape news data from the official website of **UIN 
    pip3 install -r requirements.txt
 
 ## Usage
+coming soon, write in progress
