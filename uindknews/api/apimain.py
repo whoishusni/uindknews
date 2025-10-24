@@ -31,14 +31,14 @@ def load_json_data(file_location: str):
         print(e)
         return []
     
-@app.get('/')
+@app.get('/api/v1')
 def index():
     return {
         'status_code': 200,
         'docs': 'base_url/docs'
     }
 
-@app.get('/news', response_model=NewsListResponse, name='list of 9 new news')
+@app.get('/api/v1/news', response_model=NewsListResponse, name='list of 9 new news')
 def news_list():
     file_json_location = 'data_feed/news_data.json'
     datas = load_json_data(file_json_location)

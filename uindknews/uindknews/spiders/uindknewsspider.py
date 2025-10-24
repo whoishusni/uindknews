@@ -15,8 +15,8 @@ class UindknewsspiderSpider(scrapy.Spider):
     
     def get_news_detail(self, response):
         items = UindknewsItem()
-        content_tag = response.css("div.elementor-widget-container p::text").getall()
-        content_join = ' '.join([content_tag[0], content_tag[1]]) # join praragraf 1 dan 2
+        content_tag = response.css("div.elementor-widget-container p strong::text").getall()
+        content_join = ' '.join([content_tag[0], content_tag[1], content_tag[2]]) # join praragraf 1,2, dan 3
         items['url'] = response.url
         items['news_title'] = response.css('div h1.elementor-heading-title::text').get()
         items['author'] = response.xpath("/html/body/div[2]/div[1]/div/div[2]/div/ul/li[2]/a/span/text()").get()
